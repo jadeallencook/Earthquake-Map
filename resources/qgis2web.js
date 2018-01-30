@@ -1,11 +1,13 @@
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
+
 closer.onclick = function () {
     container.style.display = 'none';
     closer.blur();
     return false;
 };
+
 var overlayPopup = new ol.Overlay({
     element: container
 });
@@ -33,11 +35,12 @@ var map = new ol.Map({
 var layerSwitcher = new ol.control.LayerSwitcher({
     tipLabel: "Layers"
 });
+
 map.addControl(layerSwitcher);
 layerSwitcher.hidePanel = function () {};
 layerSwitcher.showPanel();
 
-map.getView().fit([-12562707.226368, 4852829.636534, -12340243.175702, 5077129.621947], map.getSize());
+map.getView().fit([-12562707.226368, 4866629.636534, -12340243.175702, 5077129.621947], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -48,6 +51,7 @@ var ALL_FIELDS = 1
  * @param layerList {Array} List of ol.Layer instances
  * @param layer {ol.Layer} Layer to find field info about
  */
+
 function getPopupFields(layerList, layer) {
     // Determine the index that the layer will have in the popupLayers Array,
     // if the layersList contains more items than popupLayers then we need to
@@ -298,7 +302,13 @@ var onSingleClick = function (evt) {
                                     popupField += '<strong>' + layer.get('fieldAliases')[currentFeatureKeys[i]] + ':</strong><br />';
                                 }
                                 if (layer.get('fieldImages')[currentFeatureKeys[i]] != "Photo") {
-                                    popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? Autolinker.link(String(currentFeature.get(currentFeatureKeys[i]))) + '</td>' : '');
+                                    var num = parseFloat(Autolinker.link(String(currentFeature.get(currentFeatureKeys[i]))));
+                                    if (num < 1) {
+                                        num = num * 100;
+                                        num = Math.round(num);
+                                        num += '%';
+                                    }
+                                    popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? num + '</td>' : '');
                                 } else {
                                     popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim() + '" /></td>' : '');
                                 }
