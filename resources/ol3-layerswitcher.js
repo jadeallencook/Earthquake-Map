@@ -195,7 +195,6 @@ ol.control.LayerSwitcher.prototype.renderLayer_ = function(lyr, idx) {
             this_.setVisible_(lyr, e.target.checked);
         };
         li.appendChild(input);
-
         label.htmlFor = lyrId;
         label.innerHTML = lyrTitle;
         li.appendChild(label);

@@ -47,11 +47,11 @@ var lyr_PercentofbuildingslikelytobeURMS_1 = new ol.layer.Vector({
     source: jsonSource_PercentofbuildingslikelytobeURMS_1,
     style: style_PercentofbuildingslikelytobeURMS_1,
     title: 'Percent of buildings likely to be URMS<br />\
-    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_0.png" />  0.00 - 0.20 <br />\
-    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_1.png" />  0.20 - 0.40 <br />\
-    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_2.png" />  0.40 - 0.60 <br />\
-    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_3.png" />  0.60 - 0.80 <br />\
-    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_4.png" />  0.80 - 0.91 <br />'
+    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_0.png" />  0% - 20% <br />\
+    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_1.png" />  20% - 40% <br />\
+    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_2.png" />  40% - 60% <br />\
+    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_3.png" />  60% - 80% <br />\
+    <img src="styles/legend/PercentofbuildingslikelytobeURMS_1_4.png" />  80% - 91% <br />'
 });
 
 lyr_Counties_0.setVisible(true);
