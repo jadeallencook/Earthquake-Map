@@ -14,4 +14,4 @@ require('./styles/PercentofbuildingslikelytobeURMS_1_style.js');
 // etc
 require('./layers/layers.js');
 require('./resources/qgis2web.js');
-require('./resources/Autolinker.min.js');
+window.Autolinker = require('./resources/Autolinker.min.js');
