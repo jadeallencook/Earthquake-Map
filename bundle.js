@@ -83,7 +83,7 @@ __webpack_require__(10);
 // etc
 __webpack_require__(11);
 __webpack_require__(12);
-__webpack_require__(13);
+window.Autolinker = __webpack_require__(13);
 
 /***/ }),
 /* 1 */
@@ -2832,7 +2832,7 @@ window.style_PercentofbuildingslikelytobeURMS_1 = function(feature, resolution){
 /* 11 */
 /***/ (function(module, exports) {
 
-var wms_layers = [];
+window.wms_layers = [];
 var baseLayer = new ol.layer.Group({
     'title': '',
     layers: [

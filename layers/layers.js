@@ -1,4 +1,4 @@
-var wms_layers = [];
+window.wms_layers = [];
 var baseLayer = new ol.layer.Group({
     'title': '',
     layers: [
