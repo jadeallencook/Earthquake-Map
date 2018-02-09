@@ -1,4 +1,4 @@
-var createTextStyle = function(feature, resolution, labelText, labelFont,
+window.createTextStyle = function(feature, resolution, labelText, labelFont,
                                labelFill, placement) {
 
     if (feature.hide) {

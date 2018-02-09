@@ -1,4 +1,4 @@
-var json_PercentofbuildingslikelytobeURMS_1 = {
+window.json_PercentofbuildingslikelytobeURMS_1 = {
 "type": "FeatureCollection",
 "name": "PercentofbuildingslikelytobeURMS_1",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },

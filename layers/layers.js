@@ -56,7 +56,7 @@ var lyr_PercentofbuildingslikelytobeURMS_1 = new ol.layer.Vector({
 
 lyr_Counties_0.setVisible(true);
 lyr_PercentofbuildingslikelytobeURMS_1.setVisible(true);
-var layersList = [baseLayer, lyr_Counties_0, lyr_PercentofbuildingslikelytobeURMS_1];
+window.layersList = [baseLayer, lyr_Counties_0, lyr_PercentofbuildingslikelytobeURMS_1];
 lyr_Counties_0.set('fieldAliases', {
     'COUNTYNBR': 'COUNTYNBR',
     'ENTITYNBR': 'ENTITYNBR',

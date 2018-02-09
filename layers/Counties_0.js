@@ -1,4 +1,4 @@
-var json_Counties_0 = {
+window.json_Counties_0 = {
 "type": "FeatureCollection",
 "name": "Counties_0",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },

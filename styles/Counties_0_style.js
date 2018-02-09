@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Counties_0 = function(feature, resolution){
+window.style_Counties_0 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
