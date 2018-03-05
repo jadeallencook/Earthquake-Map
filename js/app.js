@@ -94,7 +94,7 @@
     info.update = function (props) {
         this._div.innerHTML = '<h4>Will It Topple?</h4>';
         if (props !== undefined) {
-            this._div.innerHTML += 'There\'s a <b>' + props.percent + '%</b> of fall<br />';
+            this._div.innerHTML += props.percent + '% of buildings at risk<br />';
             this._div.innerHTML += 'Average build is <b>' + props.year + '</b>';
         } else {
             this._div.innerHTML += 'Hover over a section';
